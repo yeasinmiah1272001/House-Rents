@@ -1,6 +1,6 @@
 import React from "react";
 import Container from "./Container";
-import banner from "@/images/fp-12.jpg";
+import banner from "@/images/properties/b-1.jpg";
 import Image from "next/image";
 
 const Banner = () => {
