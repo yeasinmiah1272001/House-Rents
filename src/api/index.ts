@@ -16,6 +16,11 @@ import icon1 from "@/images/icon-4.svg";
 import icon2 from "@/images/icon-5.svg";
 import icon3 from "@/images/icon-6.svg";
 import icon4 from "@/images/icon-15.svg";
+import team1 from "@/images/t-5.jpg";
+import team2 from "@/images/t-6.jpg";
+import team3 from "@/images/t-7.jpg";
+import team4 from "@/images/t-8.jpg";
+import team5 from "@/images/team-image-2.jpg";
 
 export const Popular = [
   { image: popular1, name: "New York", seat: "220 Properties" },
@@ -235,4 +240,12 @@ export const chooseUs = [
     image: icon4,
     des: "orem ipsum dolor sit amet, consectetur pro adipisici consectetur debits adipisicing lacus consectetur Business Directoyr.",
   },
+];
+
+export const team = [
+  { name: "Nina Thomas", image: team1, title: "Real Estate Agent" },
+  { name: "Chris Melo", image: team2, title: "Real Estate Agent" },
+  { name: "Katy Grace", image: team3, title: "Real Estate Agent" },
+  { name: "Mark Web", image: team4, title: "Real Estate Aget" },
+  { name: "Carls Jhons", image: team5, title: "Real Estate Aget" },
 ];

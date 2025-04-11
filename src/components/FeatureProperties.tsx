@@ -9,63 +9,65 @@ import { GiResize } from "react-icons/gi";
 
 const FeatureProperties = () => {
   return (
-    <Container className="py-10">
-      <SectionTitle
-        title="Feature Properties"
-        sub="Properties In Most Popular Places"
-      />
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8">
-        {featuredRoom.map((room, index) => (
-          <div
-            key={index}
-            className=" lg:flex items-center gap-3 border-gray-300 rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow duration-300"
-          >
-            <div className="relative group overflow-hidden transition">
-              <Image
-                alt="Property Image"
-                src={room.image}
-                height={400}
-                width={400}
-                className="w-full object-cover h-64 group-hover:scale-105 transition-transform duration-500"
-              />
-              <div className="flex items-center justify-between gap-6">
-                <div className="absolute top-4 left-4 bg-rose-500 bg-opacity-50 text-white px-3 py-1 rounded-lg text-sm">
-                  {room.status}
+    <div className="bg-gray-100">
+      <Container className="py-10">
+        <SectionTitle
+          title="Feature Properties"
+          sub="Properties In Most Popular Places"
+        />
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8">
+          {featuredRoom.map((room, index) => (
+            <div
+              key={index}
+              className=" lg:flex items-center gap-3 bg-white border-gray-300 rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow duration-300"
+            >
+              <div className="relative group overflow-hidden transition">
+                <Image
+                  alt="Property Image"
+                  src={room.image}
+                  height={400}
+                  width={400}
+                  className="w-full object-cover h-64 group-hover:scale-105 transition-transform duration-500"
+                />
+                <div className="flex items-center justify-between gap-6">
+                  <div className="absolute top-4 left-4 bg-rose-500 bg-opacity-50 text-white px-3 py-1 rounded-lg text-sm">
+                    {room.status}
+                  </div>
                 </div>
               </div>
-            </div>
-            <div className="p-6 space-y-4">
-              <h1 className="text-xl font-semibold text-gray-800">
-                {room.title}
-              </h1>
-              <div className="text-gray-600 flex items-center gap-2">
-                <IoLocationSharp className="text-gray-500" /> {room.location}
-              </div>
-              <div className="flex flex-wrap gap-4">
-                <span className="flex items-center gap-2 text-gray-600">
-                  <FaBed className="text-gray-500" /> {room.room} Rooms
-                </span>
-                <span className="flex items-center gap-2 text-gray-600">
-                  <GiResize className="text-gray-500" /> {room.area} Sq Ft
-                </span>
-                <span className="flex items-center gap-2 text-gray-600">
-                  <FaParking className="text-gray-500" /> {room.garage} Garage
-                </span>
-              </div>
-              <div className="border-t pt-4 flex items-center justify-between">
-                <h1 className="text-lg font-bold text-gray-800">
-                  ${room.price}
+              <div className="p-6 space-y-4">
+                <h1 className="text-xl font-semibold text-gray-800">
+                  {room.title}
                 </h1>
-                <div className="flex items-center gap-3 text-gray-600">
-                  <FaShareAlt className="cursor-pointer hover:text-gray-800" />
-                  <FaHeart className="cursor-pointer hover:text-red-500" />
+                <div className="text-gray-600 flex items-center gap-2">
+                  <IoLocationSharp className="text-gray-500" /> {room.location}
+                </div>
+                <div className="flex flex-wrap gap-4">
+                  <span className="flex items-center gap-2 text-gray-600">
+                    <FaBed className="text-gray-500" /> {room.room} Rooms
+                  </span>
+                  <span className="flex items-center gap-2 text-gray-600">
+                    <GiResize className="text-gray-500" /> {room.area} Sq Ft
+                  </span>
+                  <span className="flex items-center gap-2 text-gray-600">
+                    <FaParking className="text-gray-500" /> {room.garage} Garage
+                  </span>
+                </div>
+                <div className="border-t pt-4 flex items-center justify-between">
+                  <h1 className="text-lg font-bold text-gray-800">
+                    ${room.price}
+                  </h1>
+                  <div className="flex items-center gap-3 text-gray-600">
+                    <FaShareAlt className="cursor-pointer hover:text-gray-800" />
+                    <FaHeart className="cursor-pointer hover:text-red-500" />
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
-        ))}
-      </div>
-    </Container>
+          ))}
+        </div>
+      </Container>
+    </div>
   );
 };
 
