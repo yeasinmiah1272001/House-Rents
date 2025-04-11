@@ -1,0 +1,292 @@
+[
+  {
+    "_id": "67dec6050c4ff6bdf35993b4",
+    "productName": "iPhone 16 Pro Max 128GB",
+    "images": [
+      "https://i.ibb.co/hJ42TvVk/1.webp",
+      "https://i.ibb.co/KcRybyKH/2.webp",
+      "https://i.ibb.co/Hf9PMpvB/3.webp"
+    ],
+    "productBrand": "iphone",
+    "productPrice": "667",
+    "discountedPersentage": "10",
+    "productDescription": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex unde illum expedita dolores aut nostrum, quidem placeat laborum nemo, beatae perspiciatis quae, sint tempore aliquid molestiae consequatur eum earum.",
+    "productCategory": "Mobiles",
+    "reviews": [
+      {
+        "review": "This product is very cool",
+        "name": "ysm",
+        "image": "https://i.ibb.co/0RMLmnwm/Beauty-Cam-20230623053342578-save.jpg",
+        "date": "2025-03-28T15:34:48.785Z"
+      },
+      {
+        "review": "wow",
+        "name": "ysm",
+        "image": "https://i.ibb.co/0RMLmnwm/Beauty-Cam-20230623053342578-save.jpg",
+        "date": "2025-03-28T15:46:58.220Z"
+      },
+      {
+        "review": "good product",
+        "name": "Joy",
+        "image": "https://i.ibb.co/ccmcnmjt/1706863128690.jpg",
+        "date": "2025-04-01T09:48:57.684Z"
+      },
+      {
+        "review": "fdsfsdf",
+        "name": "Md Shahin Alom",
+        "image": "https://i.ibb.co/mC0JzBSG/481151869-603425522531773-8044094874355053500-n-removebg-preview.png",
+        "date": "2025-04-05T12:45:01.002Z"
+      },
+      {
+        "review": "Nice Product ",
+        "name": "Md Shahin Alom",
+        "image": "https://i.ibb.co/mC0JzBSG/481151869-603425522531773-8044094874355053500-n-removebg-preview.png",
+        "date": "2025-04-05T12:46:26.488Z"
+      }
+    ]
+  },
+  {
+    "_id": "67dec6a10c4ff6bdf35993b5",
+    "productName": "SJCAM SJ4000 Air Full Hd Wi-Fi Waterproof Sports Action Camera",
+    "images": [
+      "https://i.ibb.co/LD3tf8BV/1.jpg",
+      "https://i.ibb.co/xtWrKg95/2.jpg",
+      "https://i.ibb.co/93wVJzx0/3.jpg"
+    ],
+    "productBrand": "cannon",
+    "productPrice": "700",
+    "discountedPersentage": "30",
+    "productDescription": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex unde illum expedita dolores aut nostrum, quidem placeat laborum nemo, beatae perspiciatis quae, sint tempore aliquid molestiae consequatur eum earum.",
+    "productCategory": "Cameras",
+    "reviews": [
+      {
+        "review": "nice",
+        "name": "ysm",
+        "image": "https://i.ibb.co/0RMLmnwm/Beauty-Cam-20230623053342578-save.jpg",
+        "date": "2025-03-28T16:05:16.613Z"
+      },
+      {
+        "review": "nice",
+        "name": "ysm",
+        "image": "https://i.ibb.co/0RMLmnwm/Beauty-Cam-20230623053342578-save.jpg",
+        "date": "2025-03-28T16:05:16.636Z"
+      },
+      {
+        "review": "excellant producr",
+        "name": "Yeasin Mia",
+        "image": "https://lh3.googleusercontent.com/a/ACg8ocLvhKzq2LlN2jB4ceZs8T0n1VO1WZQYQsARcdyUTGEvKyztQw=s96-c",
+        "date": "2025-03-31T13:06:58.370Z"
+      }
+    ]
+  },
+  {
+    "_id": "67dec6f10c4ff6bdf35993b6",
+    "productName": "HP Laptop, AMD Ryzen 5 5500U Processor",
+    "images": [
+      "https://i.ibb.co/VYY4ktQS/1.webp",
+      "https://i.ibb.co/LzcVn8B3/3.webp",
+      "https://i.ibb.co/hJZrmgmG/1.webp"
+    ],
+    "productBrand": "hp",
+    "productPrice": "467",
+    "discountedPersentage": "55",
+    "productDescription": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex unde illum expedita dolores aut nostrum, quidem placeat laborum nemo, beatae perspiciatis quae, sint tempore aliquid molestiae consequatur eum earum.",
+    "productCategory": "Laptop",
+    "reviews": [
+      {
+        "review": "aaaa",
+        "name": "ysm",
+        "image": "https://i.ibb.co/0RMLmnwm/Beauty-Cam-20230623053342578-save.jpg",
+        "date": "2025-03-28T16:05:34.745Z"
+      },
+      {
+        "review": "aaaa",
+        "name": "ysm",
+        "image": "https://i.ibb.co/0RMLmnwm/Beauty-Cam-20230623053342578-save.jpg",
+        "date": "2025-03-28T16:05:34.758Z"
+      },
+      {
+        "review": "dfs",
+        "name": "ysm",
+        "image": "https://i.ibb.co/0RMLmnwm/Beauty-Cam-20230623053342578-save.jpg",
+        "date": "2025-03-28T16:10:14.683Z"
+      },
+      {
+        "review": "dfs",
+        "name": "ysm",
+        "image": "https://i.ibb.co/0RMLmnwm/Beauty-Cam-20230623053342578-save.jpg",
+        "date": "2025-03-28T16:10:14.692Z"
+      },
+      {
+        "review": "dfs",
+        "name": "ysm",
+        "image": "https://i.ibb.co/0RMLmnwm/Beauty-Cam-20230623053342578-save.jpg",
+        "date": "2025-03-28T16:10:14.714Z"
+      },
+      {
+        "review": "df",
+        "name": "ysm",
+        "image": "https://i.ibb.co/0RMLmnwm/Beauty-Cam-20230623053342578-save.jpg",
+        "date": "2025-03-28T16:10:18.221Z"
+      },
+      {
+        "review": "df",
+        "name": "ysm",
+        "image": "https://i.ibb.co/0RMLmnwm/Beauty-Cam-20230623053342578-save.jpg",
+        "date": "2025-03-28T16:10:18.235Z"
+      },
+      {
+        "review": "df",
+        "name": "ysm",
+        "image": "https://i.ibb.co/0RMLmnwm/Beauty-Cam-20230623053342578-save.jpg",
+        "date": "2025-03-28T16:10:18.266Z"
+      }
+    ]
+  },
+  {
+    "_id": "67dec75a0c4ff6bdf35993b7",
+    "productName": "WNI-6A9-GDNE-DD",
+    "images": [
+      "https://i.ibb.co/RrzNvb7/1.webp",
+      "https://i.ibb.co/5X6HLV3v/2.webp",
+      "https://i.ibb.co/35zXhfNM/4.webp"
+    ],
+    "productBrand": "walton",
+    "productPrice": "456",
+    "discountedPersentage": "18",
+    "productDescription": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex unde illum expedita dolores aut nostrum, quidem placeat laborum nemo, beatae perspiciatis quae, sint tempore aliquid molestiae consequatur eum earum.",
+    "productCategory": "Refrigerators"
+  },
+  {
+    "_id": "67dec7fe0c4ff6bdf35993b8",
+    "productName": "COLMI P71 Bluetooth Calling Smart Watch",
+    "images": [
+      "https://i.ibb.co/tT4dfCdJ/1.jpg",
+      "https://i.ibb.co/v57gkX4/3.jpg",
+      "https://i.ibb.co/wZJxTpnt/4.jpg"
+    ],
+    "productBrand": "casio",
+    "productPrice": "342",
+    "discountedPersentage": "32",
+    "productDescription": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex unde illum expedita dolores aut nostrum, quidem placeat laborum nemo, beatae perspiciatis quae, sint tempore aliquid molestiae consequatur eum earum.",
+    "productCategory": "Smart Watches",
+    "reviews": [
+      {
+        "review": "Good Product",
+        "name": "Yeasin Miah",
+        "image": "https://lh3.googleusercontent.com/a/ACg8ocIGLX8_EL9GFbLBe6oVxc2woheMcLYdYkUoG4uAHrYlUBFM9NZ6=s96-c",
+        "date": "2025-04-01T10:55:33.160Z"
+      },
+      {
+        "review": "Excellent Product",
+        "name": "Yeasin Miah",
+        "image": "https://lh3.googleusercontent.com/a/ACg8ocIGLX8_EL9GFbLBe6oVxc2woheMcLYdYkUoG4uAHrYlUBFM9NZ6=s96-c",
+        "date": "2025-04-01T11:01:56.251Z"
+      },
+      {
+        "review": "nice",
+        "name": "Yeasin Miah",
+        "image": "https://lh3.googleusercontent.com/a/ACg8ocIGLX8_EL9GFbLBe6oVxc2woheMcLYdYkUoG4uAHrYlUBFM9NZ6=s96-c",
+        "date": "2025-04-01T11:05:42.107Z"
+      }
+    ]
+  },
+  {
+    "_id": "67dec7fe0c4ff6bdf35993b9",
+    "productName": "COLMI P71 Bluetooth Calling Smart Watch",
+    "images": [
+      "https://i.ibb.co/rGtZrXYn/1.jpg",
+      "https://i.ibb.co/p675J8Pv/3.jpg",
+      "https://i.ibb.co/NnZH0SNm/4.jpg"
+    ],
+    "productBrand": "casio",
+    "productPrice": "342",
+    "discountedPersentage": "32",
+    "productDescription": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex unde illum expedita dolores aut nostrum, quidem placeat laborum nemo, beatae perspiciatis quae, sint tempore aliquid molestiae consequatur eum earum.",
+    "productCategory": "Smart Watches",
+    "reviews": [
+      {
+        "review": "a",
+        "name": "ysm",
+        "image": "https://i.ibb.co/0RMLmnwm/Beauty-Cam-20230623053342578-save.jpg",
+        "date": "2025-03-28T16:10:37.076Z"
+      },
+      {
+        "review": "a",
+        "name": "ysm",
+        "image": "https://i.ibb.co/0RMLmnwm/Beauty-Cam-20230623053342578-save.jpg",
+        "date": "2025-03-28T16:10:37.091Z"
+      }
+    ]
+  },
+  {
+    "_id": "67dec8410c4ff6bdf35993ba",
+    "productName": "HP Laptop, AMD Ryzen 5 5500U Processor",
+    "images": [
+      "https://i.ibb.co/Zzt0t2hN/1.webp",
+      "https://i.ibb.co/cSDXXrRM/2.webp",
+      "https://i.ibb.co/Kx3vTQtp/4.webp"
+    ],
+    "productBrand": "mac",
+    "productPrice": "555",
+    "discountedPersentage": "21",
+    "productDescription": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex unde illum expedita dolores aut nostrum, quidem placeat laborum nemo, beatae perspiciatis quae, sint tempore aliquid molestiae consequatur eum earum.",
+    "productCategory": "Tablets",
+    "reviews": [
+      {
+        "review": "Good product",
+        "name": "ysm",
+        "image": "https://i.ibb.co/0RMLmnwm/Beauty-Cam-20230623053342578-save.jpg",
+        "date": "2025-03-29T08:50:40.783Z"
+      },
+      {
+        "review": "Excellent Product",
+        "name": "Robin",
+        "image": "https://i.ibb.co/TqxjYW6X/formal-removebg-preview.png",
+        "date": "2025-03-29T08:52:06.828Z"
+      },
+      {
+        "review": "Excellent Product",
+        "name": "Robin",
+        "image": "https://i.ibb.co/TqxjYW6X/formal-removebg-preview.png",
+        "date": "2025-03-29T08:52:06.848Z"
+      }
+    ]
+  },
+  {
+    "_id": "67dec8900c4ff6bdf35993bb",
+    "productName": "Sony 23TD",
+    "images": [
+      "https://i.ibb.co/7tn6zMSw/1.webp",
+      "https://i.ibb.co/twjDhMYT/2.webp",
+      "https://i.ibb.co/sJgkGxpq/3.webp"
+    ],
+    "productBrand": "sony",
+    "productPrice": "341",
+    "discountedPersentage": "32",
+    "productDescription": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex unde illum expedita dolores aut nostrum, quidem placeat laborum nemo, beatae perspiciatis quae, sint tempore aliquid molestiae consequatur eum earum.",
+    "productCategory": "Television",
+    "reviews": [
+      {
+        "review": "good product",
+        "name": "akir",
+        "image": "https://i.ibb.co/wF5R1Jdw/Beauty-Cam-20230623055523102-save-1.jpg",
+        "date": "2025-04-02T14:38:08.521Z"
+      }
+    ]
+  },
+  {
+    "_id": "67dec9190c4ff6bdf35993bd",
+    "productName": "SINGER Top Loading Washing Machine | 9.0 KG | S300ATL90ISMJG1",
+    "images": [
+      "https://i.ibb.co/tPqV6Hsm/1.jpg",
+      "https://i.ibb.co/HLdJccB4/3.jpg",
+      "https://i.ibb.co/v4KNFF87/4.jpg"
+    ],
+    "productBrand": "walton",
+    "productPrice": "467",
+    "discountedPersentage": "12",
+    "productDescription": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex unde illum expedita dolores aut nostrum, quidem placeat laborum nemo, beatae perspiciatis quae, sint tempore aliquid molestiae consequatur eum earum.",
+    "productCategory": "Washing Machine"
+  }
+]

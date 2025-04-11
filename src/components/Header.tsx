@@ -1,5 +1,4 @@
 "use client";
-
 import { useState, useRef, useEffect } from "react";
 import {
   FiMenu,
@@ -13,13 +12,29 @@ import {
   FiGlobe,
 } from "react-icons/fi";
 import Link from "next/link";
+import Container from "./Container";
+
+const navigationLinks = [
+  {
+    label: "Destinations",
+    href: "/destinations",
+    icon: <FiMapPin className="h-5 w-5" />,
+  },
+  { label: "Flights", href: "/flights", icon: <FiGlobe className="h-5 w-5" /> },
+  { label: "Hotels", href: "/hotels", icon: <FiMapPin className="h-5 w-5" /> },
+  {
+    label: "Packages",
+    href: "/packages",
+    icon: <FiShoppingBag className="h-5 w-5" />,
+  },
+  { label: "Deals", href: "/deals", icon: <FiCalendar className="h-5 w-5" /> },
+];
 
 const Header = () => {
   const [isSearchOpen, setIsSearchOpen] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const mobileMenuRef = useRef<HTMLDivElement>(null);
 
-  // Close mobile menu when clicking outside
   useEffect(() => {
     function handleClickOutside(event: MouseEvent) {
       if (
@@ -35,7 +50,7 @@ const Header = () => {
       document.removeEventListener("mousedown", handleClickOutside);
     };
   }, []);
-  // Prevent scrolling when mobile menu is open
+
   useEffect(() => {
     if (isMobileMenuOpen) {
       document.body.style.overflow = "hidden";
@@ -51,46 +66,25 @@ const Header = () => {
   return (
     <header className="bg-white shadow-sm sticky top-0 z-50">
       {/* Top navigation bar */}
-      <div className="container mx-auto px-4 py-4">
+      <Container className="">
         <div className="flex items-center justify-between">
           {/* Logo */}
           <div className="flex items-center space-x-2">
             <FiGlobe className="h-6 w-6 text-teal-600" />
-            <span className="text-xl font-bold text-teal-600">TravelWorld</span>
+            <span className="text-xl font-bold text-teal-600">Find House</span>
           </div>
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center space-x-8">
-            <Link
-              href="/destinations"
-              className="text-gray-700 hover:text-teal-600 font-medium"
-            >
-              Destinations
-            </Link>
-            <Link
-              href="/flights"
-              className="text-gray-700 hover:text-teal-600 font-medium"
-            >
-              Flights
-            </Link>
-            <Link
-              href="/hotels"
-              className="text-gray-700 hover:text-teal-600 font-medium"
-            >
-              Hotels
-            </Link>
-            <Link
-              href="/packages"
-              className="text-gray-700 hover:text-teal-600 font-medium"
-            >
-              Packages
-            </Link>
-            <Link
-              href="/deals"
-              className="text-gray-700 hover:text-teal-600 font-medium"
-            >
-              Deals
-            </Link>
+            {navigationLinks.map((link, index) => (
+              <Link
+                key={index}
+                href={link.href}
+                className="text-gray-700 hover:text-teal-600 font-medium"
+              >
+                {link.label}
+              </Link>
+            ))}
           </nav>
 
           {/* Desktop Actions */}
@@ -120,67 +114,9 @@ const Header = () => {
             <FiMenu className="h-6 w-6" />
           </button>
         </div>
-      </div>
+      </Container>
 
-      {/* Search bar - conditionally rendered on desktop */}
-      {isSearchOpen && (
-        <div className="hidden md:block border-t py-4 bg-gray-50">
-          <div className="container mx-auto px-4">
-            <div className="flex items-center">
-              <div className="flex-1 flex space-x-4">
-                <div className="flex-1 relative">
-                  <FiMapPin className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-500 h-4 w-4" />
-                  <input
-                    type="text"
-                    placeholder="Where to?"
-                    className="w-full pl-10 pr-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-teal-500 focus:border-transparent"
-                  />
-                </div>
-                <div className="flex-1 relative">
-                  <FiCalendar className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-500 h-4 w-4" />
-                  <input
-                    type="text"
-                    placeholder="Check in - Check out"
-                    className="w-full pl-10 pr-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-teal-500 focus:border-transparent"
-                  />
-                </div>
-                <div className="w-32 relative">
-                  <FiUser className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-500 h-4 w-4" />
-                  <input
-                    type="text"
-                    placeholder="Guests"
-                    className="w-full pl-10 pr-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-teal-500 focus:border-transparent"
-                  />
-                </div>
-                <button className="flex items-center px-4 py-2 bg-teal-600 hover:bg-teal-700 text-white rounded-md font-medium focus:outline-none focus:ring-2 focus:ring-teal-500 focus:ring-offset-2 transition-colors">
-                  <FiSearch className="h-4 w-4 mr-2" />
-                  Search
-                </button>
-              </div>
-              <button
-                onClick={() => setIsSearchOpen(false)}
-                className="ml-4 p-2 text-gray-700 hover:text-teal-600 focus:outline-none"
-              >
-                <FiX className="h-5 w-5" />
-              </button>
-            </div>
-          </div>
-        </div>
-      )}
-
-      {/* Mobile Search - always visible on mobile */}
-      <div className="md:hidden border-t py-3 px-4 bg-gray-50">
-        <div className="relative">
-          <FiSearch className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-500 h-4 w-4" />
-          <input
-            type="text"
-            placeholder="Search destinations, hotels..."
-            className="w-full pl-10 pr-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-teal-500 focus:border-transparent"
-          />
-        </div>
-      </div>
-
-      {/* Mobile Menu - Slide-in from right */}
+      {/* Mobile Menu */}
       {isMobileMenuOpen && (
         <div className="fixed inset-0 bg-black bg-opacity-50 z-50 md:hidden">
           <div
@@ -197,46 +133,17 @@ const Header = () => {
               </button>
             </div>
             <div className="flex flex-col space-y-6 p-6">
-              <Link
-                href="/destinations"
-                className="flex items-center space-x-2 text-gray-700 hover:text-teal-600"
-                onClick={() => setIsMobileMenuOpen(false)}
-              >
-                <FiMapPin className="h-5 w-5" />
-                <span>Destinations</span>
-              </Link>
-              <Link
-                href="/flights"
-                className="flex items-center space-x-2 text-gray-700 hover:text-teal-600"
-                onClick={() => setIsMobileMenuOpen(false)}
-              >
-                <FiGlobe className="h-5 w-5" />
-                <span>Flights</span>
-              </Link>
-              <Link
-                href="/hotels"
-                className="flex items-center space-x-2 text-gray-700 hover:text-teal-600"
-                onClick={() => setIsMobileMenuOpen(false)}
-              >
-                <FiMapPin className="h-5 w-5" />
-                <span>Hotels</span>
-              </Link>
-              <Link
-                href="/packages"
-                className="flex items-center space-x-2 text-gray-700 hover:text-teal-600"
-                onClick={() => setIsMobileMenuOpen(false)}
-              >
-                <FiShoppingBag className="h-5 w-5" />
-                <span>Packages</span>
-              </Link>
-              <Link
-                href="/deals"
-                className="flex items-center space-x-2 text-gray-700 hover:text-teal-600"
-                onClick={() => setIsMobileMenuOpen(false)}
-              >
-                <FiCalendar className="h-5 w-5" />
-                <span>Deals</span>
-              </Link>
+              {navigationLinks.map((link, index) => (
+                <Link
+                  key={index}
+                  href={link.href}
+                  className="flex items-center space-x-2 text-gray-700 hover:text-teal-600"
+                  onClick={() => setIsMobileMenuOpen(false)}
+                >
+                  {link.icon}
+                  <span>{link.label}</span>
+                </Link>
+              ))}
               <div className="pt-6 border-t">
                 <button className="w-full px-4 py-2 bg-teal-600 hover:bg-teal-700 text-white rounded-md font-medium focus:outline-none focus:ring-2 focus:ring-teal-500 focus:ring-offset-2 transition-colors">
                   Book Now
