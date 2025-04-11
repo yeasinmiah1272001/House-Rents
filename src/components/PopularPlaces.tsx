@@ -15,7 +15,7 @@ const PopularPlaces = () => {
       />
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
         {Popular.map((item, index) => (
-          <div className="flex items-center group overflow-hidden  gap-6 border border-gray-400 rounded-md">
+          <div className="flex items-center shadow hover:shadow-black duration-500 group overflow-hidden  gap-6 border border-gray-400 rounded-md">
             <Image
               className="w-40 h-40 group-hover:scale-110 transition-transform duration-500"
               key={index}
