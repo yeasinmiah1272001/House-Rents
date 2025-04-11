@@ -12,6 +12,11 @@ import room3 from "@/images/properties/b-12.jpg";
 import room4 from "@/images/properties/bg-h-1.jpg";
 import room5 from "@/images/properties/fp-10.jpg";
 import room6 from "@/images/properties/fp-11.jpg";
+import icon1 from "@/images/icon-4.svg";
+import icon2 from "@/images/icon-5.svg";
+import icon3 from "@/images/icon-6.svg";
+import icon4 from "@/images/icon-15.svg";
+
 export const Popular = [
   { image: popular1, name: "New York", seat: "220 Properties" },
   { image: popular2, name: "Los Angesls", seat: "230 Properties" },
@@ -206,5 +211,28 @@ export const featuredRoom = [
     reviews: 50,
     description:
       "A trendy urban loft with a unique industrial vibe, located in the heart of Manhattan.",
+  },
+];
+
+export const chooseUs = [
+  {
+    title: "Wide Renge Of Properties",
+    image: icon1,
+    des: "orem ipsum dolor sit amet, consectetur pro adipisici consectetur debits adipisicing lacus consectetur Business Directoyr.",
+  },
+  {
+    title: "Trusted by thousands",
+    image: icon2,
+    des: "orem ipsum dolor sit amet, consectetur pro adipisici consectetur debits adipisicing lacus consectetur Business Directoyr.",
+  },
+  {
+    title: "Financing made easy",
+    image: icon3,
+    des: "orem ipsum dolor sit amet, consectetur pro adipisici consectetur debits adipisicing lacus consectetur Business Directoyr.",
+  },
+  {
+    title: "We are here near youv",
+    image: icon4,
+    des: "orem ipsum dolor sit amet, consectetur pro adipisici consectetur debits adipisicing lacus consectetur Business Directoyr.",
   },
 ];
