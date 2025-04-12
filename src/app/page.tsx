@@ -3,6 +3,7 @@ import FeatureProperties from "@/components/FeatureProperties";
 import PopularPlaces from "@/components/PopularPlaces";
 import PopularPropertices from "@/components/PopularPropertices";
 import Team from "@/components/Team";
+import Testimonials from "@/components/Testimonials";
 import WhyChooseUs from "@/components/WhyChooseUs";
 import React from "react";
 
@@ -15,7 +16,7 @@ const page = () => {
       <WhyChooseUs />
       <PopularPropertices />
       <Team />
-      <h1>page</h1>
+      <Testimonials />
     </div>
   );
 };

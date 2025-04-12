@@ -21,6 +21,11 @@ import team2 from "@/images/t-6.jpg";
 import team3 from "@/images/t-7.jpg";
 import team4 from "@/images/t-8.jpg";
 import team5 from "@/images/team-image-2.jpg";
+import client1 from "@/images/ts-1.jpg";
+import client2 from "@/images/ts-2.jpg";
+import client3 from "@/images/ts-3.jpg";
+import client4 from "@/images/ts-4.jpg";
+import client5 from "@/images/ts-5.jpg";
 
 export const Popular = [
   { image: popular1, name: "New York", seat: "220 Properties" },
@@ -248,4 +253,43 @@ export const team = [
   { name: "Katy Grace", image: team3, title: "Real Estate Agent" },
   { name: "Mark Web", image: team4, title: "Real Estate Aget" },
   { name: "Carls Jhons", image: team5, title: "Real Estate Aget" },
+];
+
+export const client = [
+  {
+    image: client1,
+    name: "Carls Jhons",
+    country: "New York",
+    des: "orem ipsum dolor sit amet, consectetur pro adipisici consectetur debits adipisicing lacus consectetur Business Directoyr.",
+  },
+  {
+    image: client2,
+    name: "Mark Web",
+    country: "New York",
+    des: "orem ipsum dolor sit amet, consectetur pro adipisici consectetur debits adipisicing lacus consectetur Business Directoyr.",
+  },
+  {
+    image: client3,
+    name: "Katy Grace",
+    country: "New York",
+    des: "orem ipsum dolor sit amet, consectetur pro adipisici consectetur debits adipisicing lacus consectetur Business Directoyr.",
+  },
+  {
+    image: client3,
+    name: "Chris Melo",
+    country: "New York",
+    des: "orem ipsum dolor sit amet, consectetur pro adipisici consectetur debits adipisicing lacus consectetur Business Directoyr.",
+  },
+  {
+    image: client4,
+    name: "Carls Jhons",
+    country: "New York",
+    des: "orem ipsum dolor sit amet, consectetur pro adipisici consectetur debits adipisicing lacus consectetur Business Directoyr.",
+  },
+  {
+    image: client5,
+    name: "Carls Jhons",
+    country: "New York",
+    des: "orem ipsum dolor sit amet, consectetur pro adipisici consectetur debits adipisicing lacus consectetur Business Directoyr.",
+  },
 ];

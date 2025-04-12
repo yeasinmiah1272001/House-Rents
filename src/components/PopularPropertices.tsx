@@ -8,8 +8,6 @@ import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
 import Image from "next/image";
 import {
-  FaArrowCircleLeft,
-  FaArrowCircleRight,
   FaBed,
   FaChevronLeft,
   FaChevronRight,
@@ -66,13 +64,13 @@ const PopularProperties = () => {
       <div className="flex justify-end gap-4 items-center mb-2">
         <button
           onClick={previous}
-          className="bg-gray-400 text-black p-2 rounded-full shadow-lg hover:bg-rose-500 hover:text-white transition duration-300 transform hover:scale-105"
+          className="bg-gray-300 text-black p-2 rounded-full shadow-lg hover:bg-rose-500 hover:text-white transition duration-300 transform hover:scale-105"
         >
           <FaChevronLeft size={30} />
         </button>
         <button
           onClick={next}
-          className="bg-gray-400 text-black p-2 rounded-full shadow-lg hover:bg-rose-500 hover:text-white transition duration-300 transform hover:scale-105"
+          className="bg-gray-300 text-black p-2 rounded-full shadow-lg hover:bg-rose-500 hover:text-white transition duration-300 transform hover:scale-105"
         >
           <FaChevronRight size={30} />
         </button>
