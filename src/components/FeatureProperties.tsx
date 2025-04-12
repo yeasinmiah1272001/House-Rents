@@ -1,4 +1,5 @@
-import React from "react";
+"use client";
+import React, { useEffect } from "react";
 import SectionTitle from "./SectionTitle";
 import { featuredRoom } from "@/api";
 import Image from "next/image";
@@ -6,8 +7,18 @@ import { IoLocationSharp } from "react-icons/io5";
 import Container from "./Container";
 import { FaBed, FaHeart, FaShareAlt, FaParking } from "react-icons/fa";
 import { GiResize } from "react-icons/gi";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const FeatureProperties = () => {
+  useEffect(() => {
+    AOS.init({
+      duration: 1000,
+      easing: "ease-in-out",
+      once: true,
+    });
+  }, []);
+
   return (
     <div className="">
       <Container className="py-10">
@@ -19,9 +30,13 @@ const FeatureProperties = () => {
           {featuredRoom.map((room, index) => (
             <div
               key={index}
-              className=" lg:flex items-center gap-3 bg-white border-gray-300 rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow duration-300"
+              className="lg:flex items-center gap-3 bg-white border-gray-300 rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow duration-300"
+              data-aos={index % 2 === 0 ? "fade-up" : "fade-down"} // Alternating animation
             >
-              <div className="relative group overflow-hidden transition">
+              <div
+                className="relative group overflow-hidden transition"
+                data-aos="zoom-in"
+              >
                 <Image
                   alt="Property Image"
                   src={room.image}
@@ -29,13 +44,11 @@ const FeatureProperties = () => {
                   width={400}
                   className="w-full object-cover h-64 group-hover:scale-105 transition-transform duration-500"
                 />
-                <div className="flex items-center justify-between gap-6">
-                  <div className="absolute top-4 left-4 bg-rose-500 bg-opacity-50 text-white px-3 py-1 rounded-lg text-sm">
-                    {room.status}
-                  </div>
+                <div className="absolute top-4 left-4 bg-rose-500 bg-opacity-50 text-white px-3 py-1 rounded-lg text-sm">
+                  {room.status}
                 </div>
               </div>
-              <div className="p-6 space-y-4">
+              <div className="p-6 space-y-4" data-aos="fade-left">
                 <h1 className="text-xl font-semibold text-gray-800">
                   {room.title}
                 </h1>
@@ -57,7 +70,10 @@ const FeatureProperties = () => {
                   <h1 className="text-lg font-bold text-gray-800">
                     ${room.price}
                   </h1>
-                  <div className="flex items-center gap-3 text-gray-600">
+                  <div
+                    className="flex items-center gap-3 text-gray-600"
+                    data-aos="fade-up"
+                  >
                     <FaShareAlt className="cursor-pointer hover:text-gray-800" />
                     <FaHeart className="cursor-pointer hover:text-red-500" />
                   </div>

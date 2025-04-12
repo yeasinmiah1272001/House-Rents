@@ -1,12 +1,14 @@
 "use client";
 
-import React, { useRef } from "react";
+import React, { useEffect, useRef } from "react";
 import Container from "./Container";
 import SectionTitle from "./SectionTitle";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
 import Image from "next/image";
+import AOS from "aos";
+import "aos/dist/aos.css";
 import {
   FaBed,
   FaChevronLeft,
@@ -19,6 +21,14 @@ import { featuredRoom } from "@/api";
 
 const PopularProperties = () => {
   const sliderRef = useRef<Slider>(null);
+
+  useEffect(() => {
+    AOS.init({
+      duration: 1000, // Animation duration
+      easing: "ease-in-out", // Animation easing
+      once: true, // Animation triggers only once
+    });
+  }, []);
 
   const next = () => {
     sliderRef.current?.slickNext();
@@ -78,7 +88,7 @@ const PopularProperties = () => {
 
       <Slider ref={sliderRef} {...settings}>
         {featuredRoom.map((item, index) => (
-          <div key={index} className="p-4">
+          <div key={index} className="p-4" data-aos="fade-up">
             <div className="bg-white rounded-lg shadow-md overflow-hidden transition group">
               <Image
                 className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-500"
