@@ -9,7 +9,7 @@ import { GiResize } from "react-icons/gi";
 
 const FeatureProperties = () => {
   return (
-    <div className="bg-gray-100">
+    <div className="">
       <Container className="py-10">
         <SectionTitle
           title="Feature Properties"
